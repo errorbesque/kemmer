@@ -45,4 +45,6 @@ input01="img0 - %01d.jpeg"
 
 ffmpeg -y -fflags +genpts -r 120 -i $input01 -vf "setpts=100*PTS,minterpolate=fps=120:scd=none" -pix_fmt yuv420p "test02.mp4"
 
+tutorials followed:
 
+https://www.youtube.com/watch?v=M8X_FFB-ikQ
